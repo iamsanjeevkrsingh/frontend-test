@@ -1,7 +1,7 @@
 
 import React, { memo } from 'react';
 import Navbar from '@/components/Navbar';
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from '@vercel/analytics/react';
 
 
 interface MainLayoutProps {
