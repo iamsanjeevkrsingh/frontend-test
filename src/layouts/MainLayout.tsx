@@ -1,6 +1,8 @@
 
 import React, { memo } from 'react';
 import Navbar from '@/components/Navbar';
+import { Analytics } from '@vercel/analytics/next';
+
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -14,6 +16,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <Navbar />
       <main className="flex-grow">
         {children}
+        <Analytics />
       </main>
       
       {/* Move the footer to a separate component that can be lazily loaded */}
